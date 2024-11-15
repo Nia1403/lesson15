@@ -1,11 +1,11 @@
 let primitiveTypes = `
 hier are primitive tytes:
-int: ${15}
-string: ${'hier is a text'}
-float: ${1.5}
-double: ${1.23421}
-char: ${'a'}
-boolean: ${true}
+int: ${15  + ' -> ' + typeof 15} 
+float: ${1.5  + ' -> ' + typeof 1.5}
+double: ${1.23421  + ' -> ' + typeof 1.23421}
+string: ${'Text'  + ' -> ' + typeof 'hier is a text'}
+char: ${'a'  + ' -> ' + typeof 'a'}
+boolean: ${true  + ' -> ' + typeof true}
 `;
 console.log(primitiveTypes);
 
@@ -14,10 +14,10 @@ const saxeli = 'Nia';
 let weekDay = 'friday';
 let activity = 'hike';
 
-const text = 'Hi, my name is ' + saxeli + ' today is ' + weekDay + ', aperfect day for a ' + activity + '.';
-typeof saxeli;
+const text = 'Hi, my name is ' + saxeli + ' today is ' + weekDay + ', and a perfect day for a ' + activity + '.';
+console.log(text)
 
-console.log(text,  'fewfwef')
+
 
 // console.log -> print out, unterschied, ein Satz kann man NICHT direcht in console log mit + und so bauen
 // var let -> gleich, var ist nur alt. variablen die geändert werden können
